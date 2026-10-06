@@ -2,7 +2,7 @@
 import os
 from groq import Groq
 
-client = Groq(api_key=os.environ["GROQ_API_KEY"])
+client = Groq(api_key=os.environ["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"])
 
 SCAM_BOT_PROMPT = "You are Officer Sharma from Cyber Cell..."
 INTERROGATOR_PROMPT = "You are a forensic interrogator..."
@@ -26,3 +26,6 @@ for turn in range(15):
     int_says = talk(INTERROGATOR_PROMPT, int_history, scam_says)
     print(f"CONFESSOR: {int_says}\n")
     scam_says = talk(SCAM_BOT_PROMPT, scam_history, int_says)
+
+
+wisper_api= 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
